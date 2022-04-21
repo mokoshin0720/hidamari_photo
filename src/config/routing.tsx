@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import { Route, Routes, BrowserRouter} from "react-router-dom"
-import Home from "../page/Home";
-import Price from "../page/price";
-import Photographer from "../page/photographer";
-import Contact from "../page/contact";
+import Home from "src/page/Home";
+import Price from "src/page/price";
+import Photographer from "src/page/photographer";
+import Contact from "src/page/contact";
 
 const Routing: React.FC = () => {
     return (

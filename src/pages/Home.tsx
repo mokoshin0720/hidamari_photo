@@ -5,7 +5,7 @@ const Home: FC = () => {
   return (
     <Fragment>
       <Layout>
-        <h1>Home</h1>
+        <h1 className="text-3xl font-bold underline">Home</h1>
       </Layout>
     </Fragment>
   );

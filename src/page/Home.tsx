@@ -1,12 +1,9 @@
-import React, { Fragment } from 'react';
-import Navigation from '../components/navigation';
+import { Fragment } from 'react';
 
 function Home() {
   return (
     <Fragment>
-      <Navigation>
-        test
-      </Navigation>
+        <p>Home</p>
     </Fragment>
   );
 }

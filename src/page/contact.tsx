@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
 
-function Price() {
+function Contact() {
   return (
     <Fragment>
-        price
+        <p>Home</p>
     </Fragment>
   );
 }
 
-export default Price;
+export default Contact;

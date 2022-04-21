@@ -1,9 +1,12 @@
-import { Fragment } from 'react';
+import { FC, Fragment } from 'react';
+import Layout from '../components/layout';
 
-function Home() {
+const Home: FC = () => {
   return (
     <Fragment>
-      <h1>Home</h1>
+      <Layout>
+        <h1>Home</h1>
+      </Layout>
     </Fragment>
   );
 }

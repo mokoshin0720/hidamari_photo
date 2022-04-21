@@ -1,9 +1,12 @@
-import { Fragment } from 'react';
+import { FC, Fragment } from 'react';
+import Layout from '../components/layout';
 
-function Contact() {
+const Contact: FC = () => {
   return (
     <Fragment>
-      <h1>予約・お問い合わせ</h1>
+      <Layout>
+        <h1>お問い合わせ</h1>
+      </Layout>
     </Fragment>
   );
 }

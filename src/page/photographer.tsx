@@ -1,9 +1,12 @@
-import { Fragment } from 'react';
+import { FC, Fragment } from 'react';
+import Layout from '../components/layout';
 
-function Photographer() {
+const Photographer: FC = () => {
   return (
     <Fragment>
-      <h1>フォトグラファー</h1>
+      <Layout>
+        <h1>フォトグラファー</h1>
+      </Layout>
     </Fragment>
   );
 }

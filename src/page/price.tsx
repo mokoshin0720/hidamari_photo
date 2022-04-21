@@ -1,9 +1,12 @@
-import { Fragment } from 'react';
+import { FC, Fragment } from 'react';
+import Layout from '../components/layout';
 
-function Price() {
+const Price: FC = () => {
   return (
     <Fragment>
-      <h1>プラン・料金</h1>
+      <Layout>
+        <h1>プラン・料金</h1>
+      </Layout>
     </Fragment>
   );
 }

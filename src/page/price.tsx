@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 function Price() {
   return (
     <Fragment>
-        price
+      <h1>プラン・料金</h1>
     </Fragment>
   );
 }

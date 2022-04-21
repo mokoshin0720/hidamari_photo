@@ -1,22 +1,13 @@
-import React, { Fragment, ReactNode } from "react";
-import { Route, Routes} from "react-router-dom"
-import Home from "../page/Home";
-import Price from "../page/price";
+import React, { Fragment } from "react";
+import { Link } from "react-router-dom"
 
-type Props = {
-    children: ReactNode
-}
-
-const Navigation: React.FC<Props> = ({children}: Props) => {
+const Navigation: React.FC = () => {
     return (
         <Fragment>
-            <Routes>
-                <Route path="/" element={<Home />}>NavigationHome</Route>
-                <Route path="/price" element={<Price />}>NavigationPrice</Route>
-            </Routes>
-            <p>navigation1</p>
-            <p>navigation2</p>
-            { children }
+            <Link to="/">Home</Link>
+            <Link to="/price">プラン・料金</Link>
+            <Link to="/photographer">フォトグラファー</Link>
+            <Link to="/contact">予約・お問い合わせ</Link>
         </Fragment>
     )
 }

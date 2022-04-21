@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 function Contact() {
   return (
     <Fragment>
-        <p>Home</p>
+      <h1>予約・お問い合わせ</h1>
     </Fragment>
   );
 }

@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 function Home() {
   return (
     <Fragment>
-        <p>Home</p>
+      <h1>Home</h1>
     </Fragment>
   );
 }

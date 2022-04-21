@@ -1,5 +1,5 @@
 import { Fragment, FC } from 'react';
-import Navigation from './navigation'
+import Navigation from 'src/components/navigation'
 
 const Header: FC = () => {
     return (

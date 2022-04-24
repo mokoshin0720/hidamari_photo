@@ -1,22 +1,20 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom"
+import { Menu } from "src/components/header"
 
-const Navigation: React.FC = () => {
+export type MenuProps = {
+    menus: Array<Menu>
+}
+
+const Navigation: React.FC<MenuProps> = ({menus}) => {
     return (
         <Fragment>
             <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/price">プラン・料金</Link>
-                </li>
-                <li>
-                    <Link to="/photographer">フォトグラファー</Link>
-                </li>
-                <li>
-                    <Link to="/contact">予約・お問い合わせ</Link>
-                </li>
+                {menus.map((value, index) => (
+                    <li key={index} className='p-4'>
+                        <Link to={value.link}>{value.name}</Link>
+                    </li>
+                ))}
             </ul>
         </Fragment>
     )

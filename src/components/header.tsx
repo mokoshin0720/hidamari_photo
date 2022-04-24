@@ -30,7 +30,7 @@ const Header: FC = () => {
     return (
         <Fragment>
             <header className='bg-gray-200'>
-                <img src={TitleImage} alt="hidamari" className="w-1/4" />
+                {/* <img src={TitleImage} alt="hidamari" className="w-1/4" /> */}
                 <Navigation menus={menus} />
             </header>
         </Fragment>

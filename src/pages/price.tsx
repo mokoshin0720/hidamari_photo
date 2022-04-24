@@ -1,5 +1,5 @@
-import { FC, Fragment } from 'react';
-import Layout from 'src/components/layout';
+import { FC, Fragment } from "react";
+import Layout from "src/components/layout";
 
 const Price: FC = () => {
   return (
@@ -9,6 +9,6 @@ const Price: FC = () => {
       </Layout>
     </Fragment>
   );
-}
+};
 
 export default Price;

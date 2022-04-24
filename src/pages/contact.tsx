@@ -1,5 +1,5 @@
-import { FC, Fragment } from 'react';
-import Layout from 'src/components/layout';
+import { FC, Fragment } from "react";
+import Layout from "src/components/layout";
 
 const Contact: FC = () => {
   return (
@@ -9,6 +9,6 @@ const Contact: FC = () => {
       </Layout>
     </Fragment>
   );
-}
+};
 
 export default Contact;

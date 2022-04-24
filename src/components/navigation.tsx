@@ -14,49 +14,26 @@ const Navigation: React.FC<MenuProps> = ({ menus }) => {
     setOpenMenu(!openMenu);
   };
 
-  console.log(openMenu);
-
   return (
     <Fragment>
-      <nav className="flex">
         {openMenu ? (
-          <div className="flex flex-row absolute z-10 top-0 right-0  min-h-fit min-w-full">
-            <div className="basis-1/2"></div>
-
-            <div className="basis-1/2 bg-white">
-              <ul className=" text-center border-l-2 ">
-                <li className="p-2 border-b-2">
-                  <button onClick={menuFunction} className="font-bold">
-                    close
-                  </button>
-                </li>
+          <div className="flex absolute top-0 right-0 min-h-fit min-w-full">
+            <div className="w-full">
+              <ul className="text-center border-l-2">
                 {menus.map((value, index) => (
                   <li key={index} className="p-2 border-b-2">
-                    <a href={value.link} onClick={menuFunction}>
-                      {value.name}
-                    </a>
+                    <Link to={value.link}>{value.name}</Link>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
         ) : undefined}
-        <div className="flex-initial text-[#abc5c5] font-bold m-5 ">
-          <ul>
-            {menus.map((value, index) => (
-              <li key={index} className="p-4">
-                <Link to={value.link}>{value.name}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
         <button
           onClick={menuFunction}
-          className="flex-initial absolute top-0 right-0"
         >
-          <img src={TitleImage} alt="hidamari" className="w-1/4" />
+          <img src={TitleImage} alt="hidamari" className="absolute top-0 right-0 w-1/4" />
         </button>
-      </nav>
     </Fragment>
   );
 };

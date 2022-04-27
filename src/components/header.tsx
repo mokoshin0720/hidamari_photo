@@ -29,8 +29,8 @@ const Header: FC = () => {
 
   return (
     <Fragment>
-      <header className="relative sticky pb-10 bg-neutral-100 top-0">
-        <img src={TitleImage} alt="hidamari" className="absolute top-0 left-0 w-1/4" />
+      <header className="relative pb-8 bg-neutral-100">
+        <img src={TitleImage} alt="hidamari" className="absolute top-2 left-2 w-64" />
         <Navigation menus={menus} />
       </header>
     </Fragment>

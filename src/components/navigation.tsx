@@ -33,6 +33,10 @@ const Navigation: React.FC<MenuProps> = ({ menus }) => {
           onClick={menuFunction}
         >
           <img src={TitleImage} alt="hidamari" className="absolute top-0 right-0 w-1/4" />
+          <div className="hamburger-menu">
+            <input type="checkbox" id="check" className="hidden" />
+            <label htmlFor="check" className="open"><span></span></label>
+          </div>
         </button>
     </Fragment>
   );

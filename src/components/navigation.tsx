@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "src/components/header";
-import TitleImage from "src/assets/images/title.png";
+import HamburgerStyle from "src/components/navigation.module.css"
 
 export type MenuProps = {
   menus: Array<Menu>;
@@ -29,15 +29,22 @@ const Navigation: React.FC<MenuProps> = ({ menus }) => {
             </div>
           </div>
         ) : undefined}
-        <button
-          onClick={menuFunction}
-        >
-          <img src={TitleImage} alt="hidamari" className="absolute top-0 right-0 w-1/4" />
-          <div className="hamburger-menu">
-            <input type="checkbox" id="check" className="hidden" />
-            <label htmlFor="check" className="open"><span></span></label>
+          <div className={HamburgerStyle.menu} onClick={menuFunction}>
+            {openMenu ? (
+              <>
+              <span className={`${HamburgerStyle.lineTop} ${HamburgerStyle.clicked}`}></span>
+              <span className={`${HamburgerStyle.lineMiddle} ${HamburgerStyle.clicked}`}></span>
+              <span className={`${HamburgerStyle.lineBottom} ${HamburgerStyle.clicked}`}></span>
+              </>
+            ) : (
+              <>
+              <span className={HamburgerStyle.lineTop}></span>
+              <span className={HamburgerStyle.lineMiddle}></span>
+              <span className={HamburgerStyle.lineBottom}></span>
+              </>
+              )
+            }
           </div>
-        </button>
     </Fragment>
   );
 };

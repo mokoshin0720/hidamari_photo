@@ -1,0 +1,45 @@
+.menu {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.lineTop,
+.lineMiddle,
+.lineBottom {
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 2px;
+  background-color: #5b1f05;
+  transition: all 0.3s;
+}
+
+.lineTop {
+  top: 10px;
+}
+
+.lineMiddle {
+  top: 18px;
+}
+
+.lineBottom {
+  top: 26px;
+}
+
+.clicked.lineTop {
+  transform-origin: 0;
+  transform: rotate(45deg);
+}
+
+.clicked.lineMiddle {
+  width: 0px;
+}
+
+.clicked.lineBottom {
+  transform-origin: 0;
+  transform: rotate(-45deg);
+  top: 24px;
+}

@@ -1,6 +1,7 @@
-import { Fragment, FC } from "react";
-import Navigation from "src/components/navigation";
+import { Fragment, FC, useState } from "react";
+import HamburgerMenu from "src/components/hamburgerMenu";
 import TitleImage from "src/assets/images/title.png";
+import Navigation from "src/components/navigation";
 
 export type Menu = {
   link: string;
@@ -27,12 +28,17 @@ const Header: FC = () => {
     },
   ];
 
+  const [openMenu, setOpenMenu] = useState(false);
+
   return (
     <Fragment>
       <header className="relative pb-8 bg-neutral-100">
         <img src={TitleImage} alt="hidamari" className="absolute top-2 left-2 w-64" />
-        <Navigation menus={menus} />
+        <HamburgerMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
       </header>
+      {openMenu ? (
+        <Navigation menus={menus} />
+        ) : undefined}
     </Fragment>
   );
 };

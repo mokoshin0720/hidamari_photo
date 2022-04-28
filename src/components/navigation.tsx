@@ -1,23 +1,14 @@
-import React, { Fragment, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "src/components/header";
-import HamburgerStyle from "src/components/navigation.module.css"
 
 export type MenuProps = {
-  menus: Array<Menu>;
-};
+    menus: Array<Menu>
+}
 
 const Navigation: React.FC<MenuProps> = ({ menus }) => {
-  const [openMenu, setOpenMenu] = useState(false);
-
-  const menuFunction = () => {
-    setOpenMenu(!openMenu);
-  };
-
-  return (
-    <Fragment>
-        {openMenu ? (
-          <div className="flex absolute top-0 right-0 min-h-fit min-w-full">
+    return (
+        <div className="relative min-h-fit min-w-full z-10">
             <div className="w-full">
               <ul className="text-center border-l-2">
                 {menus.map((value, index) => (
@@ -28,25 +19,7 @@ const Navigation: React.FC<MenuProps> = ({ menus }) => {
               </ul>
             </div>
           </div>
-        ) : undefined}
-          <div className={HamburgerStyle.menu} onClick={menuFunction}>
-            {openMenu ? (
-              <>
-              <span className={`${HamburgerStyle.lineTop} ${HamburgerStyle.clicked}`}></span>
-              <span className={`${HamburgerStyle.lineMiddle} ${HamburgerStyle.clicked}`}></span>
-              <span className={`${HamburgerStyle.lineBottom} ${HamburgerStyle.clicked}`}></span>
-              </>
-            ) : (
-              <>
-              <span className={HamburgerStyle.lineTop}></span>
-              <span className={HamburgerStyle.lineMiddle}></span>
-              <span className={HamburgerStyle.lineBottom}></span>
-              </>
-              )
-            }
-          </div>
-    </Fragment>
-  );
-};
+    )
+}
 
 export default Navigation;

@@ -17,9 +17,10 @@ const Home: FC = () => {
   return (
     <Fragment>
       <Layout>
-        <div className="relative">
-          <div className={HomeStyle.topImg}></div>
-          <h2>〜写真で未来を笑顔にしませんか〜</h2>
+        <div>
+          <div className={HomeStyle.topImg}>
+            <h2 className="absolute top-0">〜写真で未来を笑顔にしませんか〜</h2>
+          </div>
           <p>{genres}</p>
 
           <h2>Instagram</h2>

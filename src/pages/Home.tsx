@@ -1,6 +1,6 @@
 import { FC, Fragment } from "react";
 import Layout from "src/components/layout";
-import HomeStyle from "src/pages/Home.module.css"
+import style from "src/pages/Home.module.css"
 import InstagramImg1 from "src/assets/images/home/instagram_1.jpg"
 import InstagramImg2 from "src/assets/images/home/instagram_2.jpg"
 import InstagramImg3 from "src/assets/images/home/instagram_3.jpg"
@@ -18,7 +18,7 @@ const Home: FC = () => {
     <Fragment>
       <Layout>
         <div>
-          <div className={HomeStyle.topImg}>
+          <div className={style.topImg}>
             <h2 className="absolute top-0">〜写真で未来を笑顔にしませんか〜</h2>
           </div>
           <p>{genres}</p>
@@ -26,22 +26,22 @@ const Home: FC = () => {
           <h2>Instagram</h2>
           <ul className="flex flex-wrap">
             <li>
-              <img src={InstagramImg1} alt="instagram image1" className={HomeStyle.instagramImg} />
+              <img src={InstagramImg1} alt="instagram image1" className={style.instagramImg} />
             </li>
             <li>
-              <img src={InstagramImg2} alt="instagram image2" className={HomeStyle.instagramImg} />
+              <img src={InstagramImg2} alt="instagram image2" className={style.instagramImg} />
             </li>
             <li>
-              <img src={InstagramImg3} alt="instagram image3" className={HomeStyle.instagramImg} />
+              <img src={InstagramImg3} alt="instagram image3" className={style.instagramImg} />
             </li>
             <li>
-              <img src={InstagramImg4} alt="instagram image4" className={HomeStyle.instagramImg} />
+              <img src={InstagramImg4} alt="instagram image4" className={style.instagramImg} />
             </li>
             <li>
-              <img src={InstagramImg5} alt="instagram image5" className={HomeStyle.instagramImg} />
+              <img src={InstagramImg5} alt="instagram image5" className={style.instagramImg} />
             </li>
             <li>
-              <img src={InstagramImg6} alt="instagram image6" className={HomeStyle.instagramImg} />
+              <img src={InstagramImg6} alt="instagram image6" className={style.instagramImg} />
             </li>
           </ul>
 

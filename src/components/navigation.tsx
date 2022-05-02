@@ -13,7 +13,8 @@ const Navigation: React.FC<MenuProps> = ({ menus }) => {
         <ul className={style.menuList}>
           {menus.map((value, index) => (
             <li key={index} className={style.menu}>
-              <Link to={value.link}>{value.name}</Link>
+              <Link to={value.link} className={style.menuLink}>{value.name}</Link>
+              <hr className={style.menuLine} />
             </li>
           ))}
         </ul>

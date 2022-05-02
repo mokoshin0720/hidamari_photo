@@ -6,10 +6,22 @@
 .menuList {
     position: absolute;
     width: 100%;
-    background-color: red;
+    background-color: #FEE9E0;
+    margin-top: 0;
+    padding-left: 0;
 }
 
 .menu {
     padding: 0.5rem;
     list-style: none;
+}
+
+.menuLink {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #5C2005;
+}
+
+.menuLine {
+    border: 0.5px solid #5C2005;
 }

@@ -1,0 +1,48 @@
+.container {
+    position: relative;
+    z-index: 10;
+}
+
+.menuList {
+    position: absolute;
+    width: 100%;
+    background-color: #FEE9E0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.menu {
+    padding: 0.5rem;
+    list-style: none;
+    position: relative;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: #5C2005;
+    display: inline-block;
+    width: 100%;
+}
+
+.menuLine {
+    border: 0.5px solid #5C2005;
+}
+
+.lineTop,
+.lineBottom {
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 2px;
+    background-color: #5C2005;
+}
+
+.lineTop {
+    top: 10px;
+    transform: rotate(45deg);
+}
+
+.lineBottom {
+    top: 22.5px;
+    transform: rotate(-45deg);
+}

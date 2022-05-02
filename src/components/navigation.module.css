@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    z-index: 10;
+}
+
+.menuList {
+    position: absolute;
+    width: 100%;
+    background-color: red;
+}
+
+.menu {
+    padding: 0.5rem;
+    list-style: none;
+}

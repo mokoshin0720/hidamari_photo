@@ -2,6 +2,7 @@ import { Fragment, FC, useState } from "react";
 import HamburgerMenu from "src/components/hamburgerMenu";
 import TitleImage from "src/assets/images/header/title.png";
 import Navigation from "src/components/navigation";
+import style from "src/components/header.module.css";
 
 export type Menu = {
   link: string;
@@ -32,12 +33,14 @@ const Header: FC = () => {
 
   return (
     <Fragment>
-      <header className="relative pb-8 bg-neutral-100">
-        <img
-          src={TitleImage}
-          alt="hidamari"
-          className="absolute top-2 left-2 w-64"
-        />
+      <header className={style.header}>
+        <div>
+          <img
+            src={TitleImage}
+            alt="hidamari"
+            className={style.titleImg}
+            />
+        </div>
         <HamburgerMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
       </header>
       {openMenu ? <Navigation menus={menus} /> : undefined}

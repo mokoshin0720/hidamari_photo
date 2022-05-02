@@ -15,6 +15,8 @@ const Navigation: React.FC<MenuProps> = ({ menus }) => {
             <li key={index} className={style.menu}>
               <Link to={value.link} className={style.menuLink}>{value.name}</Link>
               <hr className={style.menuLine} />
+              <span className={style.lineTop}></span>
+              <span className={style.lineBottom}></span>
             </li>
           ))}
         </ul>

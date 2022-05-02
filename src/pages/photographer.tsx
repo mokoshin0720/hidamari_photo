@@ -10,8 +10,10 @@ const Photographer: FC = () => {
     <Fragment>
       <Layout>
         <div className={style.background}>
-          <h1>フォトグラファー</h1>
-          <img src={photographerImg} alt="" />
+          <h1 className={style.photographer}>フォトグラファー</h1>
+          <div>
+            <img src={photographerImg} alt="" />
+          </div>
 
           <div>
             <h2>かなた あかり</h2>

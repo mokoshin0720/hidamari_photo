@@ -1,7 +1,12 @@
 .background {
     width: 100%;
-    height: 0;
+    height: 100%;
+    display: block;
     /* padding-top: calc(1500 / 1660 * 100%); calc(画像高さ ÷ 画像横幅 × 100%) */
     /* background: url(src/assets/images/home/top.jpg) center center / cover no-repeat; */
     position: relative;
+    text-align:center;
+}
+
+.photographer {
 }

@@ -41,7 +41,10 @@ const Header: FC = () => {
             className={style.titleImg}
             />
         </div>
-        <HamburgerMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
+
+        <div className={style.hamburgerMenu}>
+          <HamburgerMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
+        </div>
       </header>
       {openMenu ? <Navigation menus={menus} /> : undefined}
     </Fragment>

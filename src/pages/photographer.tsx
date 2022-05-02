@@ -10,16 +10,16 @@ const Photographer: FC = () => {
     <Fragment>
       <Layout>
         <div className={style.background}>
-          <h1 className={style.photographer}>フォトグラファー</h1>
+          <h1 className={style.title}>フォトグラファー</h1>
           <div>
-            <img src={photographerImg} alt="" />
+            <img src={photographerImg} alt="photographer" className={style.photographerImg} />
           </div>
 
           <div>
-            <h2>かなた あかり</h2>
-            <p>子ども写真館での店長経験あり。</p>
-            <p>お子様一人一人と向き合い、自然な表情を引き出します♪</p>
-            <p className="whitespace-pre-wrap">{communication}</p>
+            <h2 className={style.photographerName}>かなた あかり</h2>
+            <p className={style.introduction}>子ども写真館での店長経験あり。</p>
+            <p className={style.introduction}>お子様一人一人と向き合い、自然な表情を引き出します♪</p>
+            <p className={`${style.introduction} ${style.communication}`}>{communication}</p>
           </div>
         </div>
       </Layout>

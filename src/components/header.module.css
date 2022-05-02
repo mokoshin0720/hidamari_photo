@@ -1,0 +1,19 @@
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    position: relative;
+}
+
+.titleImg {
+    width: 300px;
+    margin-left: 10px;
+}
+
+.hamburgerMenu {
+    margin-left: auto;
+    margin-right: 10px;
+}

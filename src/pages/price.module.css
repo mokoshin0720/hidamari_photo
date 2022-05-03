@@ -5,3 +5,91 @@
     background: url(src/assets/images/price/top.jpg) center center / cover no-repeat;
     position: relative;
 }
+
+.container {
+    text-align: center;
+    color: #5B1F05;
+}
+
+.planText {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* anniversary */
+.anniversaryContainer {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.anniversaryTitle {
+    padding-bottom: 20px;
+}
+
+.anniversaryContents {
+    text-align: left;
+}
+
+.anniversaryData {
+    text-indent: 5.0em;
+}
+
+/* senior */
+.seniorContainer {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.seniorTitle {
+    padding-bottom: 20px;
+}
+
+.seniorContents {
+    text-align: left;
+}
+
+/* couple */
+.coupleContainer {
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+    border: solid 1px black;
+}
+
+.coupleTitle {
+    position: absolute;
+    display: inline-block;
+    top: -40px;
+    left: 40%;
+    color: pink;
+    background-color: white;
+}
+
+.coupleContents {
+    white-space: pre-wrap;
+}
+
+/* option */
+.optionTitle {
+    padding-top: 30px;
+}
+
+/* picture */
+.pictureContainer {
+    padding-top: 20px;
+}
+
+.pictureContainer p {
+    white-space: pre-wrap;
+}
+
+/* dvd */
+.dvdContainer {
+    padding-top: 20px;
+}
+
+.dvdContainer p {
+    white-space: pre-wrap;
+}

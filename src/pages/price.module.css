@@ -1,14 +1,14 @@
 .topImg {
     width: 100%;
-    height: 0;
     padding-top: calc(1500 / 1660 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
-    background: url(src/assets/images/price/top.jpg) center center / cover no-repeat;
+    background: url("src/assets/images/price/top.jpg") center center / cover no-repeat;
     position: relative;
 }
 
 .container {
     text-align: center;
     color: #5B1F05;
+    background-image: url("src/assets/images/background/price.png");
 }
 
 .planText {
@@ -18,7 +18,7 @@
 
 /* anniversary */
 .anniversaryContainer {
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -38,7 +38,7 @@
 .seniorContainer {
     padding-top: 30px;
     padding-bottom: 50px;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@
 /* couple */
 .coupleContainer {
     position: relative;
-    width: 30%;
+    width: 75%;
     margin: 0 auto;
     border: solid 1px black;
 }
@@ -78,7 +78,9 @@
 
 /* picture */
 .pictureContainer {
+    width: 75%;
     padding-top: 20px;
+    margin: 0 auto;
 }
 
 .pictureContainer p {
@@ -87,7 +89,9 @@
 
 /* dvd */
 .dvdContainer {
+    width: 75%;
     padding-top: 20px;
+    margin: 0 auto;
 }
 
 .dvdContainer p {

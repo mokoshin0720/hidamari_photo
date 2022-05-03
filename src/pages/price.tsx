@@ -37,9 +37,9 @@ const Price: FC = () => {
             </div>
           </div>
 
-          <div className={style.coupleContainer}>
-            <h2 className={style.coupleTitle}>夫婦割引</h2>
-            <p className={style.coupleContents}>{couple}</p>
+          <div className={style.coupleContainer} data-caption="夫婦割引">
+            <p>夫婦割引</p>
+            {couple}
           </div>
 
           <div>

@@ -54,21 +54,27 @@
 .coupleContainer {
     position: relative;
     width: 75%;
+    height: auto;
     margin: 0 auto;
-    border: solid 1px black;
-}
+    padding: .5em .25em;
+    border: 1px solid #000;
 
-.coupleTitle {
-    position: absolute;
-    display: inline-block;
-    top: -40px;
-    left: 40%;
-    color: pink;
-    background-color: white;
-}
+    border-top: none;
+    box-sizing: border-box;
 
-.coupleContents {
+    background: linear-gradient(to right,
+    #000 calc(50% - 3em), transparent calc(50% - 3em),
+    transparent calc(50% + 3em), #000 calc(50% + 3em)) 0 0/100% 1px;
+    background-repeat: no-repeat;
     white-space: pre-wrap;
+}
+
+.coupleContainer p {
+    color: #F0047F;
+    position: absolute;
+    top: -18px;
+    left: calc(50% - 2em);
+    transform: translateY(-50%);
 }
 
 /* option */

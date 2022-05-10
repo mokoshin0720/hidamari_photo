@@ -6,7 +6,95 @@
     position: relative;
 }
 
+.container {
+    background-image: url("src/assets/images/background/home.png");
+    background-size: cover;
+}
+
 .instagramImg {
     width: 300px;
     height: 300px;
+}
+
+.topContainer {
+    position: absolute;
+    background: -moz-linear-gradient(top, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    background: -webkit-linear-gradient(top, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color:#5B1F05;
+}
+
+.topText {
+    padding-top: 20px;
+}
+
+.genreContainer {
+    text-align: center;
+    color: #5B1F05;
+    padding-top: 24px;
+}
+
+.genreContainer p {
+    white-space: pre-wrap;
+}
+
+.instagramContainer {
+    text-align: center;
+    color: #5B1F05;
+    padding-top: 20px;
+}
+
+.instagramContainer h2 {
+    padding-top: 20px;
+}
+
+.instagramImageContainer {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.instagramContainer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.instagramContainer li {
+    list-style: none;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: calc(75% / 3);
+}
+
+.instagramImg {
+    max-width: 100%;
+    height: auto;
+}
+
+.safeContainer {
+    text-align: center;
+    color: #5B1F05;
+    padding-top: 20px;
+}
+
+.safeContainer p {
+    white-space: pre-wrap;
+}
+
+.customerContainer {
+    text-align: center;
+    color: #5B1F05;
+    padding-top: 20px;
+}
+
+.customerContainer p {
+    white-space: pre-wrap;
 }

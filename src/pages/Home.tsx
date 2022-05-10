@@ -19,40 +19,58 @@ const Home: FC = () => {
       <Layout>
         <div>
           <div className={style.topImg}>
-            <h2 className="absolute top-0">〜写真で未来を笑顔にしませんか〜</h2>
+            <div className={style.topContainer}>
+              <h2 className={style.topText}>〜写真で未来を笑顔にしませんか〜</h2>
+            </div>
           </div>
-          <p className="whitespace-pre-wrap">{genres}</p>
 
-          <h2>Instagram</h2>
-          <ul className="flex flex-wrap">
-            <li>
-              <img src={InstagramImg1} alt="instagram image1" className={style.instagramImg} />
-            </li>
-            <li>
-              <img src={InstagramImg2} alt="instagram image2" className={style.instagramImg} />
-            </li>
-            <li>
-              <img src={InstagramImg3} alt="instagram image3" className={style.instagramImg} />
-            </li>
-            <li>
-              <img src={InstagramImg4} alt="instagram image4" className={style.instagramImg} />
-            </li>
-            <li>
-              <img src={InstagramImg5} alt="instagram image5" className={style.instagramImg} />
-            </li>
-            <li>
-              <img src={InstagramImg6} alt="instagram image6" className={style.instagramImg} />
-            </li>
-          </ul>
+          <div className={style.container}>
 
+          <div className={style.genreContainer}>
+            <p>{genres}</p>
+          </div>
+
+          <div className={style.instagramContainer}>
+            <h2>Instagram</h2>
+
+            <div className={style.instagramImageContainer}>
+              <ul>
+                <li>
+                  <img src={InstagramImg1} alt="instagram image1" className={style.instagramImg} />
+                </li>
+                <li>
+                  <img src={InstagramImg2} alt="instagram image2" className={style.instagramImg} />
+                </li>
+                <li>
+                  <img src={InstagramImg3} alt="instagram image3" className={style.instagramImg} />
+                </li>
+                <li>
+                  <img src={InstagramImg4} alt="instagram image4" className={style.instagramImg} />
+                </li>
+                <li>
+                  <img src={InstagramImg5} alt="instagram image5" className={style.instagramImg} />
+                </li>
+                <li>
+                  <img src={InstagramImg6} alt="instagram image6" className={style.instagramImg} />
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div className={style.safeContainer}>
           <h2>安全に安心して撮影するための取り組み</h2>
           <p>〜新型コロナウイル感染症への取り組み〜</p>
-          <p className="whitespace-pre-wrap">{coronaVirus}</p>
+          <p>{coronaVirus}</p>
+          </div>
 
+          <div className={style.customerContainer}>
           <h2>お客様へのお願い</h2>
           <p className="whitespace-pre-wrap">{notes}</p>
           <p className="whitespace-pre-wrap">{howToPay}</p>
+          </div>
 
+          </div>
         </div>
       </Layout>
     </Fragment>

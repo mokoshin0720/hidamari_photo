@@ -38,6 +38,7 @@
 .genreContainer {
     text-align: center;
     color: #5B1F05;
+    padding-top: 24px;
 }
 
 .genreContainer p {
@@ -47,6 +48,7 @@
 .instagramContainer {
     text-align: center;
     color: #5B1F05;
+    padding-top: 20px;
 }
 
 .instagramContainer h2 {
@@ -62,15 +64,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
 }
 
 .instagramContainer li {
     list-style: none;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: calc(75% / 3);
+}
+
+.instagramImg {
+    max-width: 100%;
+    height: auto;
 }
 
 .safeContainer {
     text-align: center;
     color: #5B1F05;
+    padding-top: 20px;
 }
 
 .safeContainer p {
@@ -80,6 +92,7 @@
 .customerContainer {
     text-align: center;
     color: #5B1F05;
+    padding-top: 20px;
 }
 
 .customerContainer p {

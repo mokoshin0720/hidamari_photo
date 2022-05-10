@@ -1,7 +1,7 @@
 .header {
     height: 100px;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: #FFF;
     display: flex;
     flex-flow: wrap;
     align-items: center;

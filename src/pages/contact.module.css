@@ -15,7 +15,7 @@
     width: 75%;
 }
 
-.container input, textarea {
+.container textarea, .inputText {
     width: 100%;
     font-size: 16px;
     border-radius: 3px;
@@ -27,8 +27,25 @@
 .container textarea {
     height: calc(1.3em * 5);
     line-height: 1.3;
+    resize: none;
 }
 
 .container div {
     padding-bottom: 20px;
+}
+
+.submitContainer {
+    text-align: center;
+}
+
+.submit {
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px;
+    background-color: #5B1F05;
+    color: #ffffff;
+    line-height: 1.3em;
+    padding: 10px 25px;
 }

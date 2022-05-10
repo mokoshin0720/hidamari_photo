@@ -16,25 +16,25 @@ const Contact: FC = () => {
           <div>
             <label htmlFor="">お名前（必須）</label>
             <br />
-            <input type="text" />
+            <input type="text" className={style.inputText} />
           </div>
 
           <div>
             <label htmlFor="">メールアドレス（必須）</label>
             <br />
-            <input type="text" />
+            <input type="text" className={style.inputText} />
           </div>
 
           <div>
             <label htmlFor="">TEL（必須）</label>
             <br />
-            <input type="text" />
+            <input type="text" className={style.inputText} />
           </div>
 
           <div>
             <label htmlFor="">撮影される方のお名前・年齢</label>
             <br />
-            <input type="text" />
+            <input type="text" className={style.inputText} />
           </div>
 
           <div>
@@ -43,7 +43,9 @@ const Contact: FC = () => {
             <textarea placeholder="日時、シチュエーション、ご準備いただくものなどぜひご相談ください♪" />
           </div>
 
-          <input type="submit" />
+          <div className={style.submitContainer}>
+            <input type="submit" className={style.submit} />
+          </div>
         </form>
         </div>
 

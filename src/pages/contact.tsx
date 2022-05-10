@@ -1,11 +1,16 @@
 import { FC, Fragment } from "react";
 import Layout from "src/components/layout";
+import style from "src/pages/contact.module.css";
 
 const Contact: FC = () => {
   return (
     <Fragment>
       <Layout>
-        <h1>予約・お問い合わせ</h1>
+        <div className={style.container}>
+
+        <div className={style.title}>
+          <h1>予約・お問い合わせ</h1>
+        </div>
 
         <form action="">
           <div>
@@ -35,11 +40,12 @@ const Contact: FC = () => {
           <div>
             <label htmlFor="">ご質問・ご希望内容</label>
             <br />
-            <input type="text" placeholder="日時、シチュエーション、ご準備いただくものなどぜひご相談ください♪" />
+            <textarea placeholder="日時、シチュエーション、ご準備いただくものなどぜひご相談ください♪" />
           </div>
 
           <input type="submit" />
         </form>
+        </div>
 
       </Layout>
     </Fragment>

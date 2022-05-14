@@ -46,7 +46,7 @@ const Header: FC = () => {
           <HamburgerMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
         </div>
       </header>
-      {openMenu ? <Navigation menus={menus} /> : undefined}
+      {openMenu ? <Navigation menus={menus} openMenu={openMenu} setOpenMenu={setOpenMenu} /> : undefined}
     </Fragment>
   );
 };

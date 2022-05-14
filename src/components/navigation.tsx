@@ -5,15 +5,21 @@ import style from "src/components/navigation.module.css";
 
 export type MenuProps = {
   menus: Array<Menu>;
+  openMenu: boolean;
+  setOpenMenu: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const Navigation: React.FC<MenuProps> = ({ menus }) => {
+const Navigation: React.FC<MenuProps> = ({ menus, openMenu, setOpenMenu }) => {
+  const menuFunction = () => {
+    setOpenMenu(!openMenu);
+  };
+  
   return (
     <div className={style.container}>
         <ul className={style.menuList}>
           {menus.map((value, index) => (
             <li key={index} className={style.menu}>
-              <Link to={value.link} className={style.menuLink}>{value.name}
+              <Link to={value.link} className={style.menuLink} onClick={menuFunction}>{value.name}
               <hr className={style.menuLine} />
               <span className={style.lineTop}></span>
               <span className={style.lineBottom}></span>

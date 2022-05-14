@@ -1,19 +1,26 @@
 .background {
     width: 100%;
-    height: 100vh;
+    min-height: 100%;
     background-image: url("src/assets/images/background/photographer.png");
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     text-align:center;
     color: #5B1F05;
 }
 
 .titleContainer {
-    margin-top: 21px;
-    margin-bottom: 21px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.imgContainer {
+    width: 30%;
+    margin: auto;
+    padding-bottom: 21px;
 }
 
 .photographerImg {
-    width: 25%;
+    width: 100%;
 }
 
 .communication {

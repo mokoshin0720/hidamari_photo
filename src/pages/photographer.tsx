@@ -14,7 +14,7 @@ const Photographer: FC = () => {
             <h1>フォトグラファー</h1>
           </div>
 
-          <div>
+          <div className={style.imgContainer}>
             <img src={photographerImg} alt="photographer" className={style.photographerImg} />
           </div>
 

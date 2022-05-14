@@ -10,16 +10,19 @@ const Photographer: FC = () => {
     <Fragment>
       <Layout>
         <div className={style.background}>
-          <h1 className={style.title}>フォトグラファー</h1>
-          <div>
+          <div className={style.titleContainer}>
+            <h1>フォトグラファー</h1>
+          </div>
+
+          <div className={style.imgContainer}>
             <img src={photographerImg} alt="photographer" className={style.photographerImg} />
           </div>
 
-          <div>
-            <h2 className={style.photographerName}>かなた あかり</h2>
-            <p className={style.introduction}>子ども写真館での店長経験あり。</p>
-            <p className={style.introduction}>お子様一人一人と向き合い、自然な表情を引き出します♪</p>
-            <p className={`${style.introduction} ${style.communication}`}>{communication}</p>
+          <div className={style.introduction}>
+            <h2>かなた あかり</h2>
+            <p>子ども写真館での店長経験あり。</p>
+            <p>お子様一人一人と向き合い、自然な表情を引き出します♪</p>
+            <p className={style.communication}>{communication}</p>
           </div>
         </div>
       </Layout>

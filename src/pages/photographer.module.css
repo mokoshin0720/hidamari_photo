@@ -1,31 +1,26 @@
 .background {
     width: 100%;
-    height: 100%;
-    display: block;
-    /* calc(画像高さ ÷ 画像横幅 × 100%) */
-    /* padding-top: calc(1500 / 1660 * 100%); */
-    /* background: url(src/assets/images/home/top.jpg) center center / cover no-repeat; */
-    position: relative;
+    min-height: 100%;
+    background-image: url("src/assets/images/background/photographer.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     text-align:center;
+    color: #5B1F05;
 }
 
-.title {
-    color: #5B1F05;
+.titleContainer {
     padding-top: 21px;
     padding-bottom: 21px;
 }
 
-.photographerImg {
-    width: 25%;
+.imgContainer {
+    width: 30%;
+    margin: auto;
     padding-bottom: 21px;
 }
 
-.photographerName {
-    color: #5B1F05;
-}
-
-.introduction {
-    color: #5B1F05;
+.photographerImg {
+    width: 100%;
 }
 
 .communication {

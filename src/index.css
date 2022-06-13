@@ -3,3 +3,12 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
 }
+
+p {
+    line-height: 1.8em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

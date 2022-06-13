@@ -10,8 +10,8 @@ const Price: FC = () => {
   return (
     <Fragment>
       <Layout>
-        <div className={style.topImg}></div>
         <div className={style.container}>
+        <div className={style.topImg}></div>
 
         <h1 className={style.planText}>プラン・料金</h1>
         <div>

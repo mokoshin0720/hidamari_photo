@@ -19,6 +19,12 @@
     padding-bottom: 21px;
 }
 
+@media screen and (max-width: 480px) {
+    .imgContainer {
+        width: 80%;
+    }
+}
+
 .photographerImg {
     width: 100%;
 }

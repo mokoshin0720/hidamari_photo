@@ -15,8 +15,13 @@
 }
 
 @media screen and (max-width: 480px) {
+    .header {
+        height: 35px;
+        width: 100%;
+    }
+
     .titleImg {
-        width: 300px;
+        width: 200px;
     }
 }
 

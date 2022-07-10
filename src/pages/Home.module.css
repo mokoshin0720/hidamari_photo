@@ -46,16 +46,37 @@
     font-weight: normal;
 }
 
+@media screen and (max-width: 480px) {
+    .topText {
+        padding-top: 40px;
+        font-size: 20px;
+    }
+}
+
 .genreContainer {
     text-align: center;
     color: #5B1F05;
     padding-top: 24px;
 }
 
+@media screen and (max-width: 480px) {
+    .genreContainer {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 .genreContainer p {
     white-space: pre-wrap;
     line-height: 30px;
     letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 480px) {
+    .genreContainer p {
+        line-height: normal;
+        letter-spacing: normal;
+    }
 }
 
 .instagramContainer {
@@ -78,6 +99,12 @@
     font-weight: normal;
     font-size: 21px;
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .instagramTitle {
+        font-size: 20px;
+    }
 }
 
 .instagramContainer ul {
@@ -106,16 +133,36 @@
     padding-bottom: 20px;
 }
 
+@media screen and (max-width: 480px) {
+    .safeContainer {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 .safeContainer p {
     white-space: pre-wrap;
     line-height: 30px;
     letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 480px) {
+    .safeContainer p {
+        line-height: normal;
+        letter-spacing: normal;
+    }
+}
+
 .safeTitle {
     font-weight: normal;
     font-size: 21px;
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .safeTitle {
+        font-size: 20px;
+    }
 }
 
 .customerContainer {
@@ -125,14 +172,34 @@
     padding-bottom: 100px;
 }
 
+@media screen and (max-width: 480px) {
+    .customerContainer {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 .customerTitle {
     font-size: 21px;
     padding-bottom: 20px;
     font-weight: normal;
 }
 
+@media screen and (max-width: 480px) {
+    .customerTitle {
+        font-size: 20px;
+    }
+}
+
 .customerContainer p {
     white-space: pre-wrap;
     line-height: 30px;
     letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 480px) {
+    .customerContainer p {
+        line-height: normal;
+        letter-spacing: normal;
+    }
 }

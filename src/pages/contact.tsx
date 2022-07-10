@@ -5,16 +5,17 @@ import { init, send } from 'emailjs-com';
 
 const Contact: FC = () => {
   const [name, setName] = useState('')
+  const [baby, setBaby] = useState('')
   const [mail, setMail] = useState('')
-  const [title, setTitle] = useState('')
+  const [tel, setTel] = useState('')
   const [message, setMessage] = useState('')
 
   const sendMail = (e:any) => {
     e.preventDefault()
 
-    const userID = process.env.REACT_APP_USER_ID;
-    const serviceID = process.env.REACT_APP_SERVICE_ID;
-    const templateID = process.env.REACT_APP_TEMPLATE_ID;
+    const userID = process.env.REACT_APP_EMAILJS_USER_ID;
+    const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 
     if (
       userID !== undefined &&
@@ -24,10 +25,11 @@ const Contact: FC = () => {
       init(userID)
 
       const template_param = {
-        to_name: name,
-        from_email: mail,
-        title: title,
+        name: name,
+        mail: mail,
         message: message,
+        baby: baby,
+        tel: tel,
       }
 
       send(serviceID, templateID, template_param).then(() => {
@@ -35,8 +37,9 @@ const Contact: FC = () => {
 
         setName('')
         setMail('')
+        setTel('')
         setMessage('')
-        setTitle('')
+        setBaby('')
       })
     }
   }
@@ -63,12 +66,12 @@ const Contact: FC = () => {
 
           <div>
             <label className={style.inputLabel}>TEL（必須）</label>
-            <input type="text" className={style.inputText} />
+            <input type="text" className={style.inputText} value={tel} onChange={(e) => setTel(e.target.value)}  />
           </div>
 
           <div>
             <label className={style.inputLabel}>撮影される方のお名前・年齢</label>
-            <input type="text" className={style.inputText} value={title} onChange={(e) => setTitle(e.target.value)} />
+            <input type="text" className={style.inputText} value={baby} onChange={(e) => setBaby(e.target.value)} />
           </div>
 
           <div>

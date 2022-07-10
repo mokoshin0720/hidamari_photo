@@ -28,10 +28,24 @@
     padding-top: 30px;
 }
 
+@media screen and (max-width: 480px) {
+    .planText {
+        padding-top: 40px;
+        font-size: 30px;
+    }
+}
+
 /* anniversary */
 .anniversaryContainer {
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 480px) {
+    .anniversaryContainer {
+        padding-bottom: 20px;
+    }
 }
 
 .anniversaryContainer p {
@@ -45,15 +59,33 @@
     padding-bottom: 20px;
 }
 
+@media screen and (max-width: 480px) {
+    .anniversaryTitle {
+        padding-top: 40px;
+        font-size: 20px;
+    }
+}
+
 .anniversaryContents {
     text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .anniversaryContents p {
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .anniversaryIndent {
+        text-indent: 4em;
+    }
 }
 
 /* senior */
 .seniorContainer {
     padding-top: 30px;
-    padding-bottom: 50px;
-    width: 75%;
+    padding-bottom: 10px;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -62,10 +94,28 @@
     letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 480px) {
+    .seniorContainer p {
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .seniorIndent {
+        text-indent: 4em;
+    }
+}
+
 .seniorTitle {
     font-weight: normal;
     font-size: 21px;
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .seniorTitle {
+        padding-top: 40px;
+        font-size: 20px;
+    }
 }
 
 .seniorContents {
@@ -80,11 +130,23 @@
     margin: 0 auto;
 }
 
+@media screen and (max-width: 480px) {
+    .coupleContainer {
+        width: 70%;
+    }
+}
+
 .coupleTitle {
     color: #F0047F;
     font-weight: normal;
     font-size: 21px;
     padding-bottom: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .coupleTitle {
+        font-size: 17px;
+    }
 }
 
 .coupleTextContainer p {
@@ -93,6 +155,13 @@
     white-space: pre-wrap;
     line-height: 30px;
     letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 480px) {
+    .coupleTextContainer p {
+        line-height: normal;
+        letter-spacing: normal;
+    }
 }
 
 .coupleTextContainer {
@@ -111,6 +180,13 @@
     padding-top: 30px;
 }
 
+@media screen and (max-width: 480px) {
+    .optionTitle {
+        padding-top: 40px;
+        font-size: 20px;
+    }
+}
+
 /* picture */
 .pictureContainer {
     width: 75%;
@@ -124,15 +200,29 @@
     letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 480px) {
+    .pictureContainer p {
+        line-height: normal;
+        letter-spacing: normal;
+    }
+}
+
 .pictureTitle {
     font-weight: normal;
     font-size: 21px;
     padding-bottom: 20px;
 }
 
+@media screen and (max-width: 480px) {
+    .pictureTitle {
+        padding-top: 40px;
+        font-size: 17px;
+    }
+}
+
 /* dvd */
 .dvdContainer {
-    width: 75%;
+    width: 85%;
     padding-top: 20px;
     margin: 0 auto;
 }
@@ -143,8 +233,22 @@
     letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 480px) {
+    .dvdContainer p {
+        line-height: normal;
+        letter-spacing: normal;
+    }
+}
+
 .dvdTitle {
     font-weight: normal;
     font-size: 21px;
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .dvdTitle {
+        padding-top: 40px;
+        font-size: 17px;
+    }
 }

@@ -19,6 +19,12 @@
     padding-bottom: 20px;
 }
 
+@media screen and (max-width: 480px) {
+    .photographerTitle {
+        font-size: 30px;
+    }
+}
+
 .imgContainer {
     width: 50%;
     margin: auto;
@@ -39,14 +45,28 @@
     padding-bottom: 100px;
 }
 
+@media screen and (max-width: 480px) {
+    .introductionContainer {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
 .introductionTitle {
     font-weight: normal;
     font-size: 21px;
     padding-bottom: 20px;
 }
 
-.communication {
+.introductionText {
     white-space: pre-wrap;
     line-height: 30px;
     letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 480px) {
+    .introductionText {
+        line-height: normal;
+        letter-spacing: normal;
+    }
 }

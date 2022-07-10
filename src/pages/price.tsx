@@ -22,7 +22,7 @@ const Price: FC = () => {
             <p>基本料金:20,000円</p>
             <p>出張費:撮影場所までの実費+移動時間30分毎500円</p>
             <p>内容:撮影時間最大2時間</p>
-            <p className={style.anniversaryData}>2週間後すべてのデータをオンライン上でお渡し</p>
+            <p>2週間後すべてのデータをオンライン上でお渡し</p>
             </div>
           </div>
           
@@ -37,16 +37,18 @@ const Price: FC = () => {
             </div>
           </div>
 
-          <div className={style.coupleContainer} data-caption="夫婦割引">
-            <p>夫婦割引</p>
-            {couple}
+          <div className={style.coupleContainer}>
+            <h2 className={style.coupleTitle}>夫婦割引</h2>
+            <div className={style.coupleTextContainer}>
+              <p>{couple}</p>
+            </div>
           </div>
 
-          <div>
+          <div className={style.optionContainer}>
             <h2 className={style.optionTitle}>〜オプション〜</h2>
             
             <div className={style.pictureContainer}>
-              <h3>写真仕上げ</h3>
+              <h3 className={style.pictureTitle}>写真仕上げ</h3>
               <p>料金:500円/1枚 送料520円</p>
               <p>{Lsize}</p>
               <p>ホームページフォームにて写真にしたいデータをお送り下さい</p>
@@ -54,7 +56,7 @@ const Price: FC = () => {
             </div>
 
             <div className={style.dvdContainer}>
-              <h3>DVD仕上げ</h3>
+              <h3 className={style.dvdTitle}>DVD仕上げ</h3>
               <p>料金:2,000円</p>
               <p>全データをオンライン上、かつDVDでお渡し致します。</p>
               <p className="whitespace-pre-wrap">{dvd}</p>

@@ -12,7 +12,7 @@ export type Menu = {
 const Header: FC = () => {
   const menus: Array<Menu> = [
     {
-      name: "Home",
+      name: "ホーム",
       link: "/",
     },
     {

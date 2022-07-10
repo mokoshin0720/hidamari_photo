@@ -13,6 +13,12 @@
     padding-bottom: 21px;
 }
 
+.photographerTitle {
+    font-weight: normal;
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+
 .imgContainer {
     width: 50%;
     margin: auto;
@@ -29,7 +35,18 @@
     width: 100%;
 }
 
+.introductionContainer {
+    padding-bottom: 100px;
+}
+
+.introductionTitle {
+    font-weight: normal;
+    font-size: 21px;
+    padding-bottom: 20px;
+}
+
 .communication {
     white-space: pre-wrap;
-    line-height: 2em;
+    line-height: 30px;
+    letter-spacing: 1.5px;
 }

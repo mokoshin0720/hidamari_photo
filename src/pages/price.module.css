@@ -22,8 +22,10 @@
 }
 
 .planText {
+    font-weight: normal;
+    font-size: 35px;
+    padding-bottom: 20px;
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 /* anniversary */
@@ -32,16 +34,19 @@
     margin: 0 auto;
 }
 
+.anniversaryContainer p {
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
 .anniversaryTitle {
+    font-weight: normal;
+    font-size: 21px;
     padding-bottom: 20px;
 }
 
 .anniversaryContents {
-    text-align: left;
-}
-
-.anniversaryData {
-    text-indent: 5.0em;
+    text-align: center;
 }
 
 /* senior */
@@ -52,43 +57,57 @@
     margin: 0 auto;
 }
 
+.seniorContainer p {
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
 .seniorTitle {
+    font-weight: normal;
+    font-size: 21px;
     padding-bottom: 20px;
 }
 
 .seniorContents {
-    text-align: left;
+    text-align: center;
 }
 
 /* couple */
 .coupleContainer {
-    position: relative;
-    width: 75%;
-    height: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 60%;
     margin: 0 auto;
-    padding: .5em .25em;
-    border: 1px solid #000;
-
-    border-top: none;
-    box-sizing: border-box;
-
-    background: linear-gradient(to right,
-    #000 calc(50% - 3em), transparent calc(50% - 3em),
-    transparent calc(50% + 3em), #000 calc(50% + 3em)) 0 0/100% 1px;
-    background-repeat: no-repeat;
-    white-space: pre-wrap;
 }
 
-.coupleContainer p {
+.coupleTitle {
     color: #F0047F;
-    position: absolute;
-    top: -18px;
-    left: calc(50% - 2em);
-    transform: translateY(-50%);
+    font-weight: normal;
+    font-size: 21px;
+    padding-bottom: 5px;
+}
+
+.coupleTextContainer p {
+    margin: 0;
+    padding: 10px;
+    white-space: pre-wrap;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
+.coupleTextContainer {
+    border: black 1px solid;;
 }
 
 /* option */
+.optionContainer {
+    padding-bottom: 100px;
+}
+
 .optionTitle {
+    font-weight: normal;
+    font-size: 21px;
+    padding-bottom: 20px;
     padding-top: 30px;
 }
 
@@ -101,6 +120,14 @@
 
 .pictureContainer p {
     white-space: pre-wrap;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
+.pictureTitle {
+    font-weight: normal;
+    font-size: 21px;
+    padding-bottom: 20px;
 }
 
 /* dvd */
@@ -112,4 +139,12 @@
 
 .dvdContainer p {
     white-space: pre-wrap;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
+.dvdTitle {
+    font-weight: normal;
+    font-size: 21px;
+    padding-bottom: 20px;
 }

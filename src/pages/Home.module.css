@@ -1,8 +1,7 @@
 .topImg {
-    width: 80%;
-    height: 0;
-    padding-top: calc(1500 / 1660 * 50%);
-    background: url(src/assets/images/home/top.jpg) center center / cover no-repeat;
+    width: 100%;
+    padding-top: calc(2000 / 1660 * 100%);
+    background: url(src/assets/images/home/top.jpg) no-repeat 0 0 / cover;
     position: relative;
     margin: 0 auto;
 }
@@ -17,6 +16,7 @@
 }
 
 .container {
+    padding-top: 24px;
     background-image: url("src/assets/images/background/home.png");
     background-size: cover;
 }
@@ -43,6 +43,7 @@
 
 .topText {
     padding-top: 20px;
+    font-weight: normal;
 }
 
 .genreContainer {
@@ -53,6 +54,8 @@
 
 .genreContainer p {
     white-space: pre-wrap;
+    line-height: 30px;
+    letter-spacing: 1.5px;
 }
 
 .instagramContainer {
@@ -68,6 +71,13 @@
 .instagramImageContainer {
     width: 75%;
     margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.instagramTitle {
+    font-weight: normal;
+    font-size: 21px;
+    padding-bottom: 20px;
 }
 
 .instagramContainer ul {
@@ -79,9 +89,9 @@
 
 .instagramContainer li {
     list-style: none;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    width: calc(75% / 3);
+    padding-bottom: 30px;
+    padding-right: 3px;
+    width: calc(90% / 3);
 }
 
 .instagramImg {
@@ -93,18 +103,36 @@
     text-align: center;
     color: #5B1F05;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .safeContainer p {
     white-space: pre-wrap;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
+.safeTitle {
+    font-weight: normal;
+    font-size: 21px;
+    padding-bottom: 20px;
 }
 
 .customerContainer {
     text-align: center;
     color: #5B1F05;
     padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.customerTitle {
+    font-size: 21px;
+    padding-bottom: 20px;
+    font-weight: normal;
 }
 
 .customerContainer p {
     white-space: pre-wrap;
+    line-height: 30px;
+    letter-spacing: 1.5px;
 }

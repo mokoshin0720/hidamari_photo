@@ -46,38 +46,33 @@ const Contact: FC = () => {
       <Layout>
         <div className={style.container}>
 
-        <div className={style.title}>
+        <div className={style.titleContainer}>
           <h1>予約・お問い合わせ</h1>
         </div>
 
         <form action="">
           <div>
-            <label htmlFor="">お名前（必須）</label>
-            <br />
+            <label className={style.inputLabel}>お名前（必須）</label>
             <input type="text" className={style.inputText} value={name} onChange={(e) => setName(e.target.value)} />
           </div>
 
           <div>
-            <label htmlFor="">メールアドレス（必須）</label>
-            <br />
+            <label className={style.inputLabel}>メールアドレス（必須）</label>
             <input type="text" className={style.inputText} value={mail} onChange={(e) => setMail(e.target.value)}  />
           </div>
 
           <div>
-            <label htmlFor="">TEL（必須）</label>
-            <br />
+            <label className={style.inputLabel}>TEL（必須）</label>
             <input type="text" className={style.inputText} />
           </div>
 
           <div>
-            <label htmlFor="">撮影される方のお名前・年齢</label>
-            <br />
+            <label className={style.inputLabel}>撮影される方のお名前・年齢</label>
             <input type="text" className={style.inputText} value={title} onChange={(e) => setTitle(e.target.value)} />
           </div>
 
           <div>
-            <label htmlFor="">ご質問・ご希望内容</label>
-            <br />
+            <label className={style.inputLabel}>ご質問・ご希望内容</label>
             <textarea placeholder="日時、シチュエーション、ご準備いただくものなどぜひご相談ください♪" value={message} onChange={(e) => setMessage(e.target.value)} />
           </div>
 

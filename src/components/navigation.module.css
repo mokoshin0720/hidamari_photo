@@ -8,7 +8,7 @@
     width: 100%;
     background-color: #FEE9E0;
     padding-left: 0;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .menu {
@@ -22,6 +22,7 @@
     color: #5C2005;
     display: inline-block;
     width: 100%;
+    background-color: red;
 }
 
 .menuLine {

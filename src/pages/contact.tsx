@@ -10,9 +10,8 @@ const Contact: FC = () => {
   const [message, setMessage] = useState('')
 
   const sendMail = (e:any) => {
-    console.log("here")
-
     e.preventDefault()
+
     const userID = process.env.REACT_APP_USER_ID;
     const serviceID = process.env.REACT_APP_SERVICE_ID;
     const templateID = process.env.REACT_APP_TEMPLATE_ID;

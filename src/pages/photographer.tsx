@@ -1,6 +1,6 @@
 import { FC, Fragment } from "react";
 import Layout from "src/components/layout";
-import photographerImg from "src/assets/images/photographer/person.png";
+import photographerImg from "src/assets/images/photographer/person.jpg";
 import style from "src/pages/photographer.module.css";
 import MediaQuery from "react-responsive";
 

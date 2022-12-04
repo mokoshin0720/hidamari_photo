@@ -6,10 +6,10 @@ import MediaQuery from "react-responsive";
 const Price: FC = () => {
   const couple = `ご夫婦おふたりでの撮影の場合、\n撮影基本料25,000円でデータ全てお渡し。\n2枚の四つ切サイズ写真を郵送させていただきます。`
   const mediaCouple = `ご夫婦おふたりでの撮影の場合、\n撮影基本料25,000円で\nデータ全てお渡し。\n2枚の四つ切サイズ写真を郵送させていただきます。`
-  const pictureText = `料金:500円/1枚 送料520円\nデータお渡し後2週間以内に限りデータをL判サイズで\n高品質な写真にいたします。\nホームページフォームにて写真にしたいデータをお送り下さい。\n子育てに忙しいママにオススメです！`
-  const mediaPictureText = `料金:500円/1枚 送料520円\nデータお渡し後2週間以内に限り\nデータをL判サイズで高品質な写真にいたします。\nホームページフォームにて\n写真にしたいデータをお送り下さい。\n子育てに忙しいママにオススメです！`
-  const dvdText = `料金:2,000円\n全データをオンライン上、かつDVDでお渡し致します。\nオンラインでは2週間しかデータが残りませんが、\nDVDにしておくと永久的に保存できます♪`
-  const mediaDvdText = `料金:2,000円\n全データをオンライン上、\nかつDVDでお渡し致します。\nオンラインでは2週間しかデータが残りませんが、\nDVDにしておくと永久的に保存できます♪`
+  const pictureText = `【撮影場所＋１カ所につき：¥2,200-】\n例）公園と自宅の２カ所\n\n【撮影時間延長30分毎：￥3,300-】\n撮影場所に到着説明後〜撮影終了までの時間\n撮影終了時間になったら相談させていただきます。\n\n【お子さま2人目以降：¥1,100-】\nご兄弟さまと一緒に撮影する場合1人あたりの料金となります。\n（ご家族撮影は基本料金に含まれます）\n\n【テーマ２つ目以降：¥2,000-】\nお宮参り撮影と七五三撮影など\n\n【お子様着付け1人につき：¥3,300-】\n大人の方の着付け・ヘアセットなどはしておりません。`
+  const mediaPictureText = `【撮影場所＋１カ所につき：¥2,200-】\n例）公園と自宅の２カ所\n\n【撮影時間延長30分毎：￥3,300-】\n撮影場所に到着説明後〜撮影終了までの時間\n撮影終了時間になったら相談させていただきます。\n\n【お子さま2人目以降：¥1,100-】\nご兄弟さまと一緒に撮影する場合1人あたりの料金となります。\n（ご家族撮影は基本料金に含まれます）\n\n【テーマ２つ目以降：¥2,000-】\n大人の方の着付け・ヘアセットなどはしておりません。`
+  const dvdText = `L判：¥220-\n2L：¥550\n6つ切：¥2,200-\n4つ切：¥3,300-\n6つ切パネル加工：¥8,800-\nDVD加工：¥1,100-\n`
+  const mediaDvdText = `L判：¥220-\n2L：¥550\n6つ切：¥2,200-\n4つ切：¥3,300-\n6つ切パネル加工：¥8,800-\nDVD加工：¥1,100-\n`
 
   return (
     <Fragment>
@@ -21,66 +21,61 @@ const Price: FC = () => {
         <div>
 
           <div className={style.anniversaryContainer}>
-            <h2 className={style.anniversaryTitle}>〜お子さま撮影プラン〜</h2>
+            <h2 className={style.anniversaryTitle}>〜基本料金〜</h2>
             <div className={style.anniversaryContents}>
             <MediaQuery query="(max-width: 480px)" >
-              <p>基本料金：20,000円</p>
-              <p>出張費：撮影場所までの実費＋</p>
-              <p className={style.anniversaryIndent}>移動時間30分毎500円</p>
-              <p>内容：撮影時間最大2時間</p>
-              <p>2週間後すべてのデータをオンライン上でお渡し。</p>
-            </MediaQuery>
-
-            <MediaQuery query="(min-width: 481px)" >
-              <p>基本料金：20,000円</p>
-              <p>出張費：撮影場所までの実費＋移動時間30分毎500円</p>
-              <p>内容：撮影時間最大2時間</p>
-              <p>2週間後すべてのデータをオンライン上でお渡し。</p>
-            </MediaQuery>
-            </div>
-          </div>
-          
-          <div className={style.seniorContainer}>
-            <h2 className={style.seniorTitle}>〜大人さま撮影プラン〜</h2>
-            <div className={style.seniorContents}>
-            <MediaQuery query="(max-width: 480px)" >
-              <p>基本料金：15,000円</p>
-              <p>出張費：撮影場所までの実費＋</p>
-              <p className={style.seniorIndent}>移動時間30分毎500円</p>
-              <p>内容：撮影時間最大1時間</p>
-              <p>2週間後すべてのデータをオンライン上でお渡し。</p>
+              <p>ゆったりプラン</p>
+              <p>料金：22,000円</p>
+              <p>撮影時間：2時間</p>
+              <p className={style.anniversaryIndent}>内容：データ50枚程度</p>
+              <p>2週間後データをオンライン上でお渡し</p>
+              <br />
+              <p>さくっとプラン</p>
+              <p>料金：16,500円</p>
+              <p>撮影時間：1時間</p>
+              <p className={style.anniversaryIndent}>内容：データ20枚程度</p>
+              <p>2週間後データをオンライン上でお渡し。</p>
               <p>データお渡し後2週間以内に四つ切サイズの</p>
               <p>高品質な写真を1枚郵送させて頂きます。</p>
             </MediaQuery>
 
             <MediaQuery query="(min-width: 481px)" >
-              <p>基本料金：15,000円</p>
-              <p>出張費：撮影場所までの実費+移動時間30分毎500円</p>
-              <p>内容：撮影時間最大1時間</p>
-              <p>2週間後すべてのデータをオンライン上でお渡し。</p>
-              <p>データお渡し後2週間以内に四つ切サイズの高品質な写真を1枚郵送させて頂きます。</p>
+            <p>ゆったりプラン</p>
+              <p>料金：22,000円</p>
+              <p>撮影時間：2時間</p>
+              <p className={style.anniversaryIndent}>内容：データ50枚程度</p>
+              <p>2週間後データをオンライン上でお渡し</p>
+              <br />
+              <p>さくっとプラン</p>
+              <p>料金：16,500円</p>
+              <p>撮影時間：1時間</p>
+              <p className={style.anniversaryIndent}>内容：データ20枚程度</p>
+              <p>2週間後データをオンライン上でお渡し</p>
             </MediaQuery>
             </div>
           </div>
-
-          <div className={style.coupleContainer}>
-            <h2 className={style.coupleTitle}>夫婦割引</h2>
-            <div className={style.coupleTextContainer}>
+          
+          <div className={style.seniorContainer}>
+            <h2 className={style.seniorTitle}>〜出張費〜</h2>
+            <div className={style.seniorContents}>
             <MediaQuery query="(max-width: 480px)" >
-              <p>{mediaCouple}</p>
+              <p>大阪環状線　天王寺駅〜撮影場所までの往復交通費</p>
+              <p>＋</p>
+              <p>往復移動時間30分枚￥550</p>
             </MediaQuery>
 
             <MediaQuery query="(min-width: 481px)" >
-              <p>{couple}</p>
+              <p>大阪環状線　天王寺駅〜撮影場所までの往復交通費</p>
+              <p>＋</p>
+              <p>往復移動時間30分枚￥550</p>
             </MediaQuery>
             </div>
           </div>
 
           <div className={style.optionContainer}>
-            <h2 className={style.optionTitle}>〜オプション〜</h2>
+            <h2 className={style.optionTitle}>〜オプション料金〜</h2>
             
             <div className={style.pictureContainer}>
-              <h3 className={style.pictureTitle}>写真仕上げ</h3>
               <MediaQuery query="(max-width: 480px)" >
                 <p>{mediaPictureText}</p>
               </MediaQuery>
@@ -91,7 +86,7 @@ const Price: FC = () => {
             </div>
 
             <div className={style.dvdContainer}>
-              <h3 className={style.dvdTitle}>DVD仕上げ</h3>
+              <h3 className={style.dvdTitle}>〜写真現像〜</h3>
               <MediaQuery query="(max-width: 480px)" >
                 <p>{mediaDvdText}</p>
               </MediaQuery>

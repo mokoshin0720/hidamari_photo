@@ -172,6 +172,7 @@
 
 /* option */
 .optionContainer {
+    padding-top: 80px;
     padding-bottom: 100px;
 }
 
@@ -225,7 +226,7 @@
 /* dvd */
 .dvdContainer {
     width: 85%;
-    padding-top: 20px;
+    padding-top: 800px;
     margin: 0 auto;
 }
 
